@@ -4,9 +4,15 @@
   user:  RenatoCorreaCosta
   email: rccosta84@gmail.com
   senha: .......
+
+  ======
+  Site bem interessante em portugues com os comandos básico do git:  http://rogerdudler.github.io/git-guide/index.pt_BR.html
+
+  site de fontes/icons na web: https://fontawesome.com/icons?d=gallery&m=free
+  ======
   
   
-  git init  --> preparar
+  git init  --> preparar (criar um novo repositório)
   
   git remote add .....  -> Associar.  Ex.: git remote add origin https://github.com/RenatoCorreaCosta/Curso_HTML_CSS_JS.git
   
@@ -36,4 +42,29 @@
     
   git Pull  -->  (*segunda vem em diante)
   
+
+ 
+
+ ***************************************************************
+ ** Exemplo na prática para atualizar novos arquivos na nuvem (em um repositótio já existente) ** 
+ ***************************************************************
+
+  git clone --> busca repositório (primeira vez)
+   
+      Ex.: https://github.com/RenatoCorreaCosta/Curso_HTML_CSS_JS.git
+
+  git Pull  -->  (*segunda vem em diante) 
+
+
+   --- trabalha/ codifica/cria novos arquivos ----
+
+
+  git status --> verifica se existe algum novo arquivo a ser colocado na nuvem
+
+  git add .   --> preparar o repositório para atualização
+
+  git commit -am "salvando (local) novos arquivos para colcoar na nuvem"
+
+  git push --> atualizar novos arquivos (preparados acima) na nuvem (vai pedir login no git hub)
+   
   
