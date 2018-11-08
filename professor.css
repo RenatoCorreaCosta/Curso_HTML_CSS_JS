@@ -1,0 +1,87 @@
+.box{
+    border-style: solid;
+    box-shadow: #132e64;
+    solid-opacity: 0.8;
+    color: #143464;
+}
+
+.boxc{
+    border-style: solid;
+    box-shadow: #641710;
+    solid-opacity: 0.8;
+    color: #641d19;
+}
+
+
+body {
+    font-family: Verdana,sans-serif;
+    font-size: 0.9em;
+}
+
+header, footer {
+    padding: 10px;
+    color: white;
+    background-color: #0f7a80;
+}
+
+section {
+    margin: 5px;
+    padding: 10px;
+    background-color: lightgrey;
+}
+
+article {
+    margin: 5px;
+    padding: 10px;
+    background-color: white;
+}
+
+nav ul {
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 5px;
+}
+
+.subTitle{
+    color: brown;
+    font-size: larger;
+}
+
+video{
+    width: 250px;
+    height: 210px;
+}
+/*progress[value] {
+    width: 100px;
+    height: 20px;
+}*/
+
+
+
+/*
+progress[value]::-moz-progress-bar {
+    background-image:
+            -moz-linear-gradient(
+                    135deg,
+                    transparent 33%,
+                    rgba(0, 0, 0, 0.1) 33%,
+                    rgba(0, 0, 0, 0.1) 66%,
+                    transparent 66%
+            ),
+            -moz-linear-gradient(
+                    top,
+                    rgba(255, 255, 255, 0.25),
+                    rgba(0, 0, 0, 0.25)
+            ),
+            -moz-linear-gradient(
+                    left,
+                    #09c,
+                    #f44
+            );
+
+    border-radius: 2px;
+    background-size: 35px 20px, 100% 100%, 100% 100%;
+}*/
