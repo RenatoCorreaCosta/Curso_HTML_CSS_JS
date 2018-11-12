@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/style.css" >
+    <title>exemploCSS</title>
+</head>
+<body>
+
+
+<!-- abaixo, ver no arquivo style.css -- > div:first-child{..} e div:last-child {..} -->
+<section>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</section>
+
+<section>
+    <div></div>
+    <div class="divTest" title="teste"></div>
+    <div></div>
+    <div></div>
+</section>
+
+<!-- baixo, ver no arquivo style.css:
+
+.divTest1#um {
+background-color: #009;
+}
+.divTest1#dois {
+background-color: #060;
+}
+.divTest1#tres {
+background-color: #900;
+}
+.divTest1:target {      --- >  evidencia a div clicada
+z-index: 1000;
+}
+-->
+
+
+<nav>
+    <a href="#um" title="ir para o quadro 1">Um</a>
+    <a href="#dois" title="ir para o quadro 2">Dois</a>
+    <a href="#tres" title="ir para o quadro 3">Três</a>
+</nav>
+
+<div class="divTest1" id="um">Quadro 1</div>
+<div class="divTest1" id="dois">Quadro 2</div>
+<div class="divTest1" id="tres">Quadro 3</div>
+
+
+</body>
+</html>

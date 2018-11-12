@@ -1,0 +1,133 @@
+/*Exemplos styles CSS*/
+
+p {
+    text-align: center;
+    color: red;
+}
+
+#textoCentralizadoID {
+    text-align: center;
+    color: blueviolet;
+}
+
+.textoCentralizadoCLass {
+    text-align: center;
+    color: #53ff9d;
+}
+
+
+p.textoCentralizado {
+    text-align: center;
+    color: #ffb310;
+}
+
+li {
+    font-family: Arial, sans-serif;
+    line-height: 200%;
+    color: #333;
+    list-style: none;
+}
+
+li[rel="livro"]:before {
+    content: "Livro: ";
+    color: #D35529;
+    font-weight: bold;
+}
+
+
+li:after {
+    color: #405cd3;
+    font-weight: bold;
+}
+li[rel="timao"]:after {
+    content: " - jogador do Corinthians.";
+}
+li[rel="tricolor"]:after {
+    content: " -  jogador do Fluminense";
+}
+
+section {
+    width: 800px;
+    overflow: auto;
+    margin: 0 auto;
+}
+
+div {
+    width: 100px;
+    height: 100px;
+    background-color: #333;
+    margin: 20px;
+    float: left;
+}
+
+div:first-child {
+    background-color: #900;
+    margin-left: 0px;
+}
+
+div:last-child {
+    background-color: #006;
+    margin-right: 0px;
+}
+
+/*Exemplos CSS 2*/
+
+h1 {
+    counter-increment: numero-do-titulo;
+}
+h1::before {
+    content: "Captiulo " counter(numero-do-titulo);
+}
+
+.divTest {
+    width: 100px;
+    height: 100px;
+    background-color: #333;
+    margin: 10px;
+    float: left;
+    line-height: 100px;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 16px;
+}
+
+.divTest[title] {
+    background-color: #006600 ;
+}
+
+nav {
+    margin: 10px;
+}
+nav a {
+    padding: 10px;
+    font-family: Arial, sans-serif;
+}
+.divTest1 {
+    width: 300px;
+    height: 100px;
+    line-height: 200px;
+    text-align: center;
+    padding: 10px;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    position: absolute;
+    top: 450px;
+    left: 20px;
+    z-index: 1;
+}
+.divTest1#um {
+    background-color: #009;
+}
+.divTest1#dois {
+    background-color: #060;
+}
+.divTest1#tres {
+    background-color: #900;
+}
+.divTest1:target {
+    z-index: 1000;
+}
+

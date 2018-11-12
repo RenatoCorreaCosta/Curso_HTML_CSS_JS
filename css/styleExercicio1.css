@@ -1,0 +1,4 @@
+tr:nth-child(odd) {   <!--odd:entre os filhos -->
+   color: #641d19;
+   background-color: #53ff9d;
+}
