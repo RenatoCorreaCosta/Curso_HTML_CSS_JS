@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <script src="../js/index.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.5.0/js/all.js" integrity="sha384-GqVMZRt5Gn7tB9D9q7ONtcp4gtHIUEW/yG7h98J7IpE3kpi+srfFyyB/04OV6pG0" crossorigin="anonymous"></script>
+    <title>Exercicio 2</title>
+</head>
+<body>
+<div class="formCadastro">
+    <form id="_forExercicio2" method="post" action="">
+        <h1 class="tituloForm">A Simple Form</h1>
+        <h2 class="subTituloForm">Form Fudamentals</h2>
+
+        <fieldset>
+            <legend>Customer Info</legend>
+            <label for="_Name">Name:</label>
+            <input id="_Name" type="text" placeholder="Enter your name"><br/>
+            <label for="_Phone">Telephone:</label>
+            <input id="_Phone" type="text" required pattern="\d{1}-?\d{3}-?\d{3}-?\d{4}" placeholder="Parttern: 1-234-567-8910"><br/>
+            <label for="_Email">Email Address:</label>
+            <input id="_Email" type="email" placeholder="Enter your e-mail address"><br/>
+        </fieldset>
+
+        <fieldset>
+            <legend>Books</legend>
+            <input id="_Book"/>
+            <label for="_NumberBooks">Quanttity (Maximum 5):</label>
+            <input id="_NumberBooks" type="number">
+        </fieldset>
+
+        <input id="_Submit" type="submit" value="Submit">
+        <br/>
+       <span><i class="far fa-copyright"></i>2011 Acme United. All rights reserved</span>
+    </form>
+</div>
+</body>
+</html>
