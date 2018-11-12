@@ -2,3 +2,9 @@ tr:nth-child(odd) {   <!--odd:entre os filhos -->
    color: #641d19;
    background-color: #53ff9d;
 }
+
+
+body{
+    background-image: url("../images/onda_secret_PlayaNegra_c.png");
+    background-repeat: repeat-y
+}
