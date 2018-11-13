@@ -1,0 +1,97 @@
+
+body {
+    counter-reset: my-awesome-counter;
+}
+section {
+    counter-increment: my-awesome-counter;
+}
+section:before {
+    content: counter(my-awesome-counter);
+}
+
+
+table{
+   font-family: Verdana;
+    margin: 5px;
+    padding: 10px;
+}
+
+th{
+    background-color: gainsboro ;
+}
+
+tr{
+    background-color: grey;
+}
+tr:nth-child(odd){
+   background-color: antiquewhite;
+}
+
+td{
+    //padding: 5%;
+}
+
+
+.div-teste{
+    transform: skewx(20deg);
+    transform: skewy(20deg);
+}
+
+.div-teste:hover {
+    //transform: rotate(180deg);
+}
+
+.div-teste2{
+    width: 300px;
+    height: 150px;
+    margin: 2%;
+    padding: 2%;
+    background: #0f7a80;
+    position: relative;
+    /*    -webkit-animation: mymove 5s infinite; !* Safari 4.0 - 8.0 *!*/
+    animation: mymove 1s infinite;
+    animation-direction: alternate;
+}
+
+@keyframes mymove {
+    from {left: 0px;}
+    to {left: 300px;}
+}
+
+.row {
+    clear: both;
+}
+
+.column {
+    float: left;
+    height: 41px;
+}
+
+.column-1 {
+    width: 10%;
+}
+
+.column-2 {
+    width: 15%;
+}
+
+.column-3 {
+    width: 25%;
+}
+
+.column-4 {
+    width: 20%;
+}
+
+.column-5 {
+    width: 15%;
+}
+
+.label {
+    padding-top: 7px;
+    text-align: right;
+}
+
+.label:after {
+    padding-right: 10px;
+}

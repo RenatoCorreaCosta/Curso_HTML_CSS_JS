@@ -1,0 +1,57 @@
+form{
+    width: 100%;
+    height: 100%;
+}
+div{
+    background-image: url("http://www.dicasparacomputador.com/files/u5/encontrando-minhas-imagens-pela-internet.jpg");
+}
+
+h1{
+    color: rgb(83, 255, 157);
+}
+.formCadastro{
+    width: 100%;
+    height: 100%;
+    background-image: url("http://photos.com.br/wp-content/uploads/2013/01/425809_147816155364924_2115115877_n.jpg");
+}
+
+.tituloForm{
+    border: #5c67ff;
+    border-style: solid;
+    width: 50%;
+}
+.subTituloForm{
+    color: #641d19;
+}
+
+.divInfo{
+    border-style: solid;
+    border-color: #641d19;
+    width: 100%;
+    float: left;
+    height: 100%;
+    background-image: url("../images/onda_secret_PlayaNegra_c.png");
+    color: #ffffff;
+}
+.divLivros{
+    border-style: solid;
+    border-color: #000066;
+    width: 100%;
+    float: left;
+    height: 100%;
+    background-image: url("../images/onda_secret_PlayaNegra_c.png");
+}
+.divRodape{
+    float: bottom;
+}
+
+td{
+    width: 50%;
+    alignment: left;
+    height: 50;
+    background-image: url("../images/vector-sky-purple-night-4.png");
+}
+#celLivros{
+
+}
+

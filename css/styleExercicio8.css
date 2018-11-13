@@ -1,0 +1,36 @@
+img{
+    width: 100%;
+    height: 100%;
+}
+
+.container{
+    width: 400px;
+    height: 600px;
+}
+
+.div1 {
+    width: 50%;
+    height: 50%;
+    margin: 5% 55% 45% 45%;
+
+    border-style: solid;
+    transform: skewx(20deg);
+    transform: skewy(20deg);
+}
+
+
+.div2 {
+    border-style: solid;
+    width: 60%;
+    height: 50%;
+
+    transform: rotate(30deg);
+    //animation: mymove 1s infinite;
+    //animation-direction: alternate;
+}
+
+
+//@keyframes mymove {
+//    from {left: 0px;}
+//    to {left: 300px;}
+//}
