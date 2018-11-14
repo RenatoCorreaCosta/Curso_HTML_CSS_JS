@@ -1,17 +1,14 @@
-HTML:
+* GIT:
+     Site bem interessante em portugues com os comandos básico do git:   http://rogerdudler.github.io/git-guide/index.pt_BR.html
+
+
+== Site de fontes/icons na web: 
+       https://fontawesome.com/icons?d=gallery&m=free
+
+* HTML:
 
       https://www.w3schools.com/tags/default.asp
 
       https://tableless.com.br/
 
-  ======
-  Site bem interessante em portugues com os comandos básico do git:  http://rogerdudler.github.io/git-guide/index.pt_BR.html
-
-  site de fontes/icons na web: 
-       https://fontawesome.com/icons?d=gallery&m=free
-  ======
-
-
-  CSS
-
-  Java Script:   https://getbootstrap.com/docs/4.1/getting-started/introduction/
+* CSS / Java Script:   https://getbootstrap.com/docs/4.1/getting-started/introduction/
