@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <script src="../js/index.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.5.0/js/all.js" integrity="sha384-GqVMZRt5Gn7tB9D9q7ONtcp4gtHIUEW/yG7h98J7IpE3kpi+srfFyyB/04OV6pG0" crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+    <title>Cadastro Animal</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <form id="_FormContactInfo">
+            <div class="row">
+                <div class="col-sm">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="inputGroup-sizing-sm">Nome:</span>
+                    </div>
+                    <input type="text" class="form-control" id="_Nome" aria-label="Sizing example input"
+                           aria-describedby="inputGroup-sizing-sm" placeholder="Rex">
+                </div>
+                <div class="col-sm">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="inputGroup-Senha">Senha:</span>
+                    </div>
+                    <input type="password" class="form-control" id="_Senha" aria-label="Sizing example input"
+                           aria-describedby="inputGroup-sizing-sm" placeholder="Senha">
+                </div>
+            </div>
+
+            <!-- <div class="input-group input-group-sm mb-3">
+
+            </div>
+            Senha: <input type="password" id="_Senha2" > -->
+
+            <legend>Qual seu animal favorito?</legend>
+
+            <input type="radio" name="_Animal" id="_Animal1" value="Cat"  />Gato<br />
+            <input type="radio" name="_Animal" id="_Animal2" value="Dog"  />Cachorro<br />
+            <input type="radio" name="_Animal" id="_Animal3" value="Bird" />Passarinho<br />
+
+            <div class="custom-control custom-radio">
+                <input type="radio" class="custom-control-input" id="defaultUnchecked1" name="defaultExampleRadios">
+                <label class="custom-control-label" for="defaultUnchecked1">Gato</label><br>
+                <input type="radio" class="custom-control-input" id="defaultUnchecked2" name="defaultExampleRadios">
+                <label class="custom-control-label" for="defaultUnchecked2">Cachorro</label><br>
+                <input type="radio" class="custom-control-input" id="defaultUnchecked3" name="defaultExampleRadios">
+                <label class="custom-control-label" for="defaultUnchecked3">Passarinho</label>
+            </div>
+    <br>
+            <div class="custom-control custom-radio">
+                <input type="radio" class="custom-control-input" id="defaultGroupExample1" name="groupOfDefaultRadios">
+                <label class="custom-control-label" for="defaultGroupExample1">Option 1</label> <br>
+                <input type="radio" class="custom-control-input" id="defaultGroupExample2" name="groupOfDefaultRadios">
+                <label class="custom-control-label" for="defaultGroupExample2">Option 2</label><br>
+                <input type="radio" class="custom-control-input" id="defaultGroupExample3" name="groupOfDefaultRadios">
+                <label class="custom-control-label" for="defaultGroupExample3">Option 2</label>
+
+            </div>
+            </div>
+
+
+
+            <p/>
+            Nascimento:<input name="_DataNascimento" type="date" />
+
+            <p/>
+            <table>
+                <tr><td>Endereço: </td><td><input type="text" id="_Endereco" placeholder="digite sua rua"> </td> </tr>
+                <tr><td>Numero:</td> <td>  <input name="_NumeroCasa" type="number" placeholder="100"/> </td> </tr>
+                <tr><td>CEP: </td> <td>  <input name="CEP" id="CEP" required pattern="\d{5}-?\d{3}" placeholder="99999-999"/> </td> </tr>
+            </table>
+
+            <p/>
+            Endereço Email:<input name="_eMail" type="email"  placeholder="nome@email.com"/>
+
+            <p/>
+            Cor do Animal:<input type="color" id="_CorAnimal">
+
+            <p/>
+            Satisfação do Atendimento: 0 <input name="_SatisfacaoAtendimento" type="range" min="5" max="100" step="5" /> 100
+            </table>
+
+            <p/>
+            <select id="_Especies">
+                <option value="cao">Cachórros</option>
+                <option value="gato" >Gatos</option>
+                <option value="passaro" selected="selected">Passáros</option>
+                <option value="roedor">Roédores</option>
+                <option value="grande porte">Animais grande porte</option>
+            </select>
+            <br>
+            <select class="selectpicker">
+                <option>Mustard</option>
+                <option>Ketchup</option>
+                <option>Relish</option>
+            </select>
+            <br>
+            <select class="selectpicker">
+                <optgroup label="Picnic">
+                    <option>Mustard</option>
+                    <option>Ketchup</option>
+                    <option>Relish</option>
+                </optgroup>
+                <optgroup label="Camping">
+                    <option>Tent</option>
+                    <option>Flashlight</option>
+                    <option>Toilet Paper</option>
+                </optgroup>
+            </select>
+
+
+            <p/>
+            <label for="_TextoMultiLine" id="_labelTextoMultiLine">Descrição do Animal</label><p/>
+            <textarea id="_TextoMultiLine" cols="40" rows="6"></textarea>
+
+
+
+            <hr/>
+                Busca: <input name="_BuscarNome" type="search" placeholder="pesquisar..." />
+            <hr/>
+
+
+            <div class="row">
+                <div class="col-3">
+                    <button type="button" class="btn btn-primary">Enviar</button>
+                </div>
+                <div class="col-3">
+                    <button type="button" class="btn btn-danger">Cancelar</button>
+                </div>
+            </div>
+
+        </form>
+    </div>
+</body>
+</html>
