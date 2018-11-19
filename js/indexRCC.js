@@ -9,6 +9,16 @@ function subtrai (){
     alert("Resultado: " + result);
     console.log("Resultado: " + result);
 }
+function divide (){
+    var result = parseInt(document.getElementById("txtNumber1").value)/parseInt(document.getElementById("txtNumber2").value);
+    alert("Resultado: " + result);
+    console.log("Resultado: " + result);
+}
+function multiplica (){
+    var result = parseInt(document.getElementById("txtNumber1").value) * parseInt(document.getElementById("txtNumber2").value);
+    alert("Resultado: " + result);
+    console.log("Resultado: " + result);
+}
 
 //exFor (loop)
 function getSexo(){
@@ -57,21 +67,20 @@ function calculaMediaAlunos() {
         if (results[i].type == "number") {
             //alert("parseFloat(results[i].value: " + parseFloat(results[i].value));
 
-           if (parseFloat(results[i].value) != null) {
+           if (parseFloat(results[i].value)) {
                 totalNotas += parseFloat(results[i].value);
            }
         }
     }
-    if (totalNotas != null){
+    if (totalNotas){
         mediaNotas = totalNotas / results.length;
+        document.getElementById("txtMedia").value = mediaNotas;
+        alert("Notas (total): " + totalNotas);
+        alert("Média final dos alunos: " + mediaNotas);
     }else{
         alert ("Insira pelo menos uma nota");
+        document.getElementById("nota01").focus();
     }
-
-    alert ("Notas (total): " + totalNotas);
-    alert("Média final dos alunos: " + mediaNotas);
-
-    document.getElementById("txtMedia").value = mediaNotas;
 }
 
 function consisteNota (nota){
