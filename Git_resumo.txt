@@ -43,6 +43,9 @@
   git Pull  -->  (*segunda vem em diante)
   
 
+   * se você alterar algum arquivo (local, na tua máquina) e se arrependeu, querendo atualiar o repositório a partir da nuvem, 
+     
+     deve digitar o comando:  git stash
  
 
  ***************************************************************

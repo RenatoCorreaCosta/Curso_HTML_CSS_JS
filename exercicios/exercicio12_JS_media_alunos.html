@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="../js/indexRCC.js"></script>
+    <meta charset="UTF-8">
+    <title>Exercicio JS - Calc Media Alunos</title>
+
+</head>
+<body>
+<div class="">
+    <p>Media dos alunos</p>
+
+    <form class="" method="post">
+        <label>Aluno 01</label>
+        <input type="number" name="alunos" id="nota01" value="" max="10" placeholder="Digite nota 01" onblur="consisteNota(this.id)">
+        <br><br>
+        <label>Aluno 02</label>
+        <input type="number" name="alunos" id="nota02" value="" max="10" placeholder="Digite nota 02" onblur="consisteNota(this.id)">
+        <br><br>
+        <label>Aluno 03</label>
+        <input type="number" name="alunos" id="nota03" value="" max="10" placeholder="Digite nota 03" onblur="consisteNota(this.id)">
+        <br><br>
+        <label>Aluno 04</label>
+        <input type="number" name="alunos" id="nota04" value="" max="10" placeholder="Digite nota 04" onblur="consisteNota(this.id)">
+        <br><br>
+        <input type="button" onclick="calculaMediaAlunos()" name="name" value="Calcular média dos alunos"> <br />
+        <input type="text" id="txtMedia" value="">
+    </form>
+
+</body>
+</html>

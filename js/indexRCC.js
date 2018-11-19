@@ -10,7 +10,7 @@ function subtrai (){
     console.log("Resultado: " + result);
 }
 
-//exSwtichCase
+//exFor (loop)
 function getSexo(){
     var results = document.getElementsByName("sexo");
     var finalResult;
@@ -20,21 +20,68 @@ function getSexo(){
             finalResult = results[i].value;
         }
     }
-
     alert("Resultado:" + finalResult);
-
-    /*
-    switch (new date().getDay()) {
-        case 1:
-            result = "Segunda";
-            break;
-        case 2:
-            result = "Terça";
-            break;
-        default:
-            result = "Sem definição"
-    }*/
 }
+
+function getOndaMentawai(){
+    var results = document.getElementsByName("ondas");
+    var finalResult;
+
+    for (i = 0; i < results.length; i++) {
+        if (results[i].type == "radio" && results[i].checked) {
+            finalResult = results[i].value;
+        }
+    }
+    alert("Resultado:" + finalResult);
+}
+
+function testeForIn (){
+    var arrayTeste =["Gremio","Imortal","Total"];
+
+    for (var indiceArray in arrayTeste)
+        alert(arrayTeste[indiceArray]);
+}
+
+function exibeCabecalhos(){
+    for (i=1; i<4; i++){
+        document.write("<h" + i +"> Cabelçalho </h>")
+    }
+}
+
+function calculaMediaAlunos() {
+    var results = document.getElementsByName("alunos");
+    var totalNotas = null;
+    var mediaNotas = 0;
+
+    for (i = 0; i < results.length; i++) {
+        if (results[i].type == "number") {
+            //alert("parseFloat(results[i].value: " + parseFloat(results[i].value));
+
+           if (parseFloat(results[i].value) != null) {
+                totalNotas += parseFloat(results[i].value);
+           }
+        }
+    }
+    if (totalNotas != null){
+        mediaNotas = totalNotas / results.length;
+    }else{
+        alert ("Insira pelo menos uma nota");
+    }
+
+    alert ("Notas (total): " + totalNotas);
+    alert("Média final dos alunos: " + mediaNotas);
+
+    document.getElementById("txtMedia").value = mediaNotas;
+}
+
+function consisteNota (nota){
+    if (parseFloat(document.getElementById(nota).value) >10 || parseFloat(document.getElementById(nota).value) < 0){
+        document.getElementById(nota).value = null;
+        alert ("nota inválida");
+        document.getElementById(nota).focus();
+    }
+}
+
 
 //exSwtichCase
 /*function getDiaSemana{
