@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript">
+        function criarParagrafo(){
+           var objNovoParagrafo = document.createElement('p');
+           var strTexto = document.createTextNode('Loner Surfer');
+            objNovoParagrafo.appendChild(strTexto);
+            document.getElementById("pPrinc").appendChild(objNovoParagrafo);
+        }
+    </script>
+    <title>Title</title>
+</head>
+<body>
+ <div style="width: 100%">
+
+        <p id="pPrinc" onclick="criarParagrafo()">
+           Click aqui para inserir um novo texto
+        </p>
+ </div>
+</body>
+</html>

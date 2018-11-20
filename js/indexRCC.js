@@ -101,12 +101,48 @@ function carregaImagens() {
        //alert(array1[ind].src);
     }
     var image;
+    var img;
     for (var ind =0; ind < array1.length; ind++){
-        var img = "imagem"+ (ind+1);
+        img = "imagem"+ (ind+1);
         image = document.getElementById(img);
         image.src = array1[ind].src;
     }
     //documet.getElementById("img1").setAttribute("src",array1[0].src);
+}
+
+
+function trocaImagem(element){
+    //var img = document.getElementByName(element.name)[element.index];
+    //alert(element.name + " - " + element.id);
+
+    var result = document.getElementsByName(element.name);
+
+    var nextImg;
+    var indexImgAtual = parseInt(element.id.substr(length-1,1)) - 1;
+
+    //alert ("indexImgAtual: " + indexImgAtual);
+
+    nextImg = indexImgAtual + 1;
+    if (nextImg > 4) nextImg = 0;
+
+    //alert("indexImgAtual: " + indexImgAtual + "  -- nextImg: " + nextImg); //result[2].src);
+
+    //altert(result[2].value);
+
+  //  var nextImg = document.getElementByName(element.name)[2]; //[element.index];
+
+    element.src = result[nextImg].src;
+
+
+//    Math.random()
+
+    //alert(img.src);
+    //img.src = document.getElementByName(element.name)[element.index+1].src;
+
+    /*var objNovoParagrafo = document.createElement('p');
+    var strTexto = document.createTextNode('Loner Surfer');
+    objNovoParagrafo.appendChild(strTexto);
+    document.getElementById("pPrinc").appendChild(objNovoParagrafo); */
 }
 
 

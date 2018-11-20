@@ -13,5 +13,5 @@
 
 
 
-* CSS / Java Script:   https://getbootstrap.com/docs/4.1/getting-started/introduction/
+* HTML/ CSS / Java Script:   https://getbootstrap.com/docs/4.1/getting-started/introduction/
                        https://getbootstrap.com/docs/4.1/components/buttons/
