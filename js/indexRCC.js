@@ -91,6 +91,24 @@ function consisteNota (nota){
     }
 }
 
+function carregaImagens() {
+    var array1 = new Array(5);
+    //array1 = ["teste","ola","bom dia","tarde","noite"]
+
+    for (var ind =0; ind < array1.length; ind++){
+       array1[ind] = new Image();
+       array1[ind].src = "../images/img" + ind + ".png";
+       //alert(array1[ind].src);
+    }
+    var image;
+    for (var ind =0; ind < array1.length; ind++){
+        var img = "imagem"+ (ind+1);
+        image = document.getElementById(img);
+        image.src = array1[ind].src;
+    }
+    //documet.getElementById("img1").setAttribute("src",array1[0].src);
+}
+
 
 //exSwtichCase
 /*function getDiaSemana{
