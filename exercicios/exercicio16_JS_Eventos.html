@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercício JS Evento</title>
+
+    <script type="text/javascript">
+        function exibeTexto(){
+            var texto1 = document.getElementById("txtTexto1");
+            //ert(texto1.value);
+            var paragrafo  = document.getElementById("pResultado1").innerHTML;
+            paragrafo = "<h1>"+texto1.value+"</h1>";
+
+            //paragrafo = paragrafo +"<p><h1>"+texto1.value+"</h1></p>";
+            //paragrafo.innerHTML = "<h1>"+texto1.value+"</h1>"
+
+            document.getElementById("pResultado1").innerHTML = paragrafo;
+
+        }
+    </script>
+</head>
+
+<body>
+
+  <input type="text" id="txtTexto1"><br>
+
+   <input type="button" value="Mostrar" onclick="exibeTexto()">
+
+    <div>
+        <p align="center" id="pResultado1">
+
+        </p>
+    </div>
+
+</body>
+</html>
