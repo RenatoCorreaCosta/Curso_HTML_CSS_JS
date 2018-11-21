@@ -7,30 +7,29 @@
     <script type="text/javascript">
         function exibeTexto(){
             var texto1 = document.getElementById("txtTexto1");
+            document.getElementById("pResultado1").innerHTML = "<h1>"+texto1.value+"</h1>";
+
             //ert(texto1.value);
-            var paragrafo  = document.getElementById("pResultado1").innerHTML;
-            paragrafo = "<h1>"+texto1.value+"</h1>";
+            //var paragrafo  = document.getElementById("pResultado1").innerHTML;
+            //paragrafo = "<h1>"+texto1.value+"</h1>";
 
-            //paragrafo = paragrafo +"<p><h1>"+texto1.value+"</h1></p>";
             //paragrafo.innerHTML = "<h1>"+texto1.value+"</h1>"
-
-            document.getElementById("pResultado1").innerHTML = paragrafo;
-
+            //paragrafo = paragrafo +"<p><h1>"+texto1.value+"</h1></p>";
+            //document.getElementById("pResultado1").innerHTML = paragrafo;
         }
     </script>
 </head>
 
 <body>
 
-  <input type="text" id="txtTexto1"><br>
+   <input type="text" id="txtTexto1" onblur="exibeTexto()"><br>
 
    <input type="button" value="Mostrar" onclick="exibeTexto()">
 
-    <div>
+   <div>
         <p align="center" id="pResultado1">
 
         </p>
-    </div>
-
+   </div>
 </body>
 </html>
