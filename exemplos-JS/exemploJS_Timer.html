@@ -9,9 +9,15 @@
         setInterval(function(){myTimer()},1000);
 
         var count = 1;
+
+        var animais = ["Gato", "Cachorro", "Papagaio"];
+        indice = 0;
+
         function myTimer(){
-            document.getElementById("pResultado1").innerHTML = "<h1> R " + count +" </h1>";
+            document.getElementById("pResultado1").innerHTML = "<h1> R " + count +" <br> <br> <b>" + animais[indice] +"</b></h1>";
             count++;
+            indice++;
+            if (indice > 2) indice = 0;
         }
     </script>
 
